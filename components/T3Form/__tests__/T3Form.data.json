@@ -1,0 +1,81 @@
+{
+  "elements": [
+    {
+      "type": "fieldset",
+      "fieldlist": true,
+      "identifier": "fieldset-1",
+      "label": "Personal Information",
+      "value": null,
+      "elements": [
+        {
+          "value": "",
+          "validators": [
+            {
+              "identifier": "email",
+              "message": "You must enter a valid email address."
+            },
+            {
+              "identifier": "required",
+              "message": "This field is mandatory."
+            }
+          ],
+          "type": "email",
+          "identifier": "email",
+          "label": "Email",
+          "placeholder": "your email",
+          "required": true,
+          "name": "tx_form_formframework[email]"
+        },
+        {
+          "value": "",
+          "type": "text",
+          "identifier": "name",
+          "label": "Name",
+          "description": "",
+          "required": true,
+          "validators": [
+            {
+              "identifier": "required",
+              "message": "This field is mandatory."
+            }
+          ],
+          "name": "tx_form_formframework[name]"
+        },
+        {
+          "value": "+49",
+          "type": "text",
+          "identifier": "phone",
+          "label": "Telephone",
+          "placeholder": "00-000-000-000",
+          "validators": [
+            {
+              "options": {
+                "regex": "^[0-9-+]+$"
+              },
+              "identifier": "regex",
+              "message": "You must enter a valid value. Please refer to the description of this field."
+            }
+          ],
+          "name": "tx_form_formframework[phone]"
+        }
+      ]
+    },
+    {
+      "type": "fieldset",
+      "fieldlist": true,
+      "identifier": "fieldset-2",
+      "label": "Message",
+      "value": null,
+      "elements": [
+        {
+          "value": "",
+          "type": "text",
+          "identifier": "message",
+          "label": "Message",
+          "description": "",
+          "name": "tx_form_formframework[message]"
+        }
+      ]
+    }
+  ]
+}
