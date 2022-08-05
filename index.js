@@ -1,33 +1,22 @@
 import { resolve, join } from "path";
 
-export default function Typo3Tailwind(moduleOptions) {
-  console.log(this.options.typo3tailwind); // 'hello'
+export default function Typo3Tailwind() {
+  const config = this.options.typo3tailwind || {
+    layouts: true
+  }
 
-  this.nuxt.hook("ready", async (nuxt) => {
-    console.log("Nuxt is ready");
-  });
+  if (config.layouts) {
+    this.addLayout(resolve(__dirname, "./layouts/default.vue"), "default");
+  }
 
   this.addModule(["@nuxtjs/tailwindcss"]);
-
-  this.addLayout(resolve(__dirname, "./layouts/default.vue"), "default");
 
   this.addPlugin({
     src: resolve(__dirname, "plugin.js"),
     fileName: "nuxt-typo3-theme-plugin.js",
   });
-  // this.options.components = true;
-  // this.nuxt.hook('components:dirs', dirs => {
-  //   // Add ./components dir to the list
-
-  //   dirs.push({
-  //     path: join(__dirname, 'components'),
-  //     level: 0
-  //   })
-  // })
 
   this.nuxt.hook("tailwindcss:config", function (tailwindConfig) {
-    // console.log(tailwindTypography,"przed")
-    // tailwindConfig = Object.assign(tailwindConfig, tailwindTypography);
     tailwindConfig.content.push(resolve(__dirname, "**/*.vue"));
     tailwindConfig.plugins.push(require('@tailwindcss/typography'));
     tailwindConfig.theme = {extend: {
@@ -35,7 +24,6 @@ export default function Typo3Tailwind(moduleOptions) {
         primary: "#ff8700"
       }
     }};
-    console.log(tailwindConfig)
   });
   this.extendBuild((config, { isDev, isClient }) => {
     config.resolve.alias["~typo3-tailwind"] = resolve(__dirname);

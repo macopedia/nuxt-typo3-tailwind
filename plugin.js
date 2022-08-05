@@ -14,18 +14,18 @@ import T3CeTextmedia from '~typo3-tailwind/components/T3CeTextmedia/T3CeTextmedi
 import T3CeHeader from '~typo3-tailwind/components/T3CeHeader/T3CeHeader.vue'
 import T3CeTable from '~typo3-tailwind/components/T3CeTable/T3CeTable.vue'
 
-export default function () {
-  Vue.component('TheHeader', TheHeader)
-  Vue.component('T3CeTextpic', T3CeTextpic)
-  Vue.component('T3CeFormFormframework', T3CeFormFormframework)
-  Vue.component('T3Form', T3Form)
-  Vue.component('T3FormFieldList', T3FormFieldList)
-  // Vue.component('T3FormCta', T3FormCta)
-  Vue.component('T3CeMenuPages', T3CeMenuPages)
-  Vue.component('T3CeMenuSubpages', T3CeMenuSubpages)
-  // Vue.component('T3CeMenuPagesList', T3CeMenuPagesList)
-  Vue.component('T3CeText', T3CeText)
-  Vue.component('T3CeTextmedia', T3CeTextmedia)
-  Vue.component('T3CeHeader', T3CeHeader)
-  Vue.component('T3CeTable', T3CeTable)
-}
+
+Vue.component('TheHeader', TheHeader)
+Vue.component('T3CeTextpic', T3CeTextpic)
+Vue.component('T3CeFormFormframework', T3CeFormFormframework)
+Vue.component('T3Form', T3Form)
+Vue.component('T3FormFieldList', T3FormFieldList)
+// Vue.component('T3FormCta', T3FormCta)
+Vue.component('T3CeMenuPages', T3CeMenuPages)
+Vue.component('T3CeMenuSubpages', T3CeMenuSubpages)
+// Vue.component('T3CeMenuPagesList', T3CeMenuPagesList)
+Vue.component('T3CeText', T3CeText)
+Vue.component('T3CeTextmedia', T3CeTextmedia)
+Vue.component('T3CeHeader', T3CeHeader)
+Vue.component('T3CeTable', T3CeTable)
+
