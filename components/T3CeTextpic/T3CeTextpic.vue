@@ -3,7 +3,7 @@
 
   <div
     v-if="layout === 'hero'"
-    class="t3-ce-textpic container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+    class="t3-ce-textpic  mx-auto flex px-5 py-24 items-center justify-center flex-col"
   >
     <t3-media-gallery
       v-if="gallery"
@@ -15,7 +15,7 @@
     <div class="text-center lg:w-2/3 w-full prose">
       <t3-ce-header v-bind="$props" class="" />
       <t3-html-parser class="mb-8 leading-relaxed" :content="bodytext" />
-    </div>ś
+    </div>
   </div>
 
   <!--  appearance default layout -->

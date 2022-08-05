@@ -6,6 +6,8 @@ import T3Form from '~typo3-tailwind/components/T3Form/T3Form.vue'
 import T3FormFieldList from '~typo3-tailwind/components/T3Form/T3FormFieldList/T3FormFieldList.vue'
 // import T3FormCta from '~typo3-tailwind/components/T3Form/T3FormCta/T3FormCta.vue'
 import T3CeMenuPages from '~typo3-tailwind/components/T3CeMenuPages/T3CeMenuPages.vue'
+import T3CeMenuSubpages from '~typo3-tailwind/components/T3CeMenuPages/T3CeMenuPages.vue'
+
 // import T3CeMenuPagesList from 'nuxt-typo3/lib/components/T3CeMenuPages/T3CeMenuPagesList.vue'
 import T3CeText from '~typo3-tailwind/components/T3CeText/T3CeText.vue'
 import T3CeTextmedia from '~typo3-tailwind/components/T3CeTextmedia/T3CeTextmedia.vue'
@@ -20,6 +22,7 @@ export default function () {
   Vue.component('T3FormFieldList', T3FormFieldList)
   // Vue.component('T3FormCta', T3FormCta)
   Vue.component('T3CeMenuPages', T3CeMenuPages)
+  Vue.component('T3CeMenuSubpages', T3CeMenuSubpages)
   // Vue.component('T3CeMenuPagesList', T3CeMenuPagesList)
   Vue.component('T3CeText', T3CeText)
   Vue.component('T3CeTextmedia', T3CeTextmedia)

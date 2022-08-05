@@ -1,5 +1,5 @@
 <template>
-  <div class="t3-ce-menu px-5 py-24 mx-auto">
+  <div class="t3-ce-menu  px-5 py-24 mx-auto">
     <t3-ce-header v-bind="$props" class="text-center mb-20 mx-auto prose" />
 
     <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" v-if="menu">
@@ -25,11 +25,11 @@
   </div>
 </template>
 <script>
-import T3CeMenuPages from 'nuxt-typo3/lib/components/T3CeMenuPages/T3CeMenuPages.vue'
+import T3CeMenuSubpages from 'nuxt-typo3/lib/components/T3CeMenuPages/T3CeMenuPages.vue'
 // import T3CeMenuPagesList from 'nuxt-typo3/lib/components/T3CeMenuPages/T3CeMenuPagesList.vue'
 export default {
-  name: 'T3CeMenuPages',
-  extends: T3CeMenuPages,
+  name: 'T3CeMenuSubpages',
+  extends: T3CeMenuSubpages,
   // components: {
   //   T3CeMenuPagesList
   // },
