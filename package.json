@@ -1,6 +1,6 @@
 {
   "name": "nuxt-typo3-tailwind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@nuxtjs/tailwindcss": "^5.3.1",
-    "@tailwindcss/typography": "^0.5.4"
+    "@tailwindcss/typography": "^0.5.4",
+    "@nuxt/kit": "3.0.0-rc.13"
   }
 }
