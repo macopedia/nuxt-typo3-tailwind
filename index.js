@@ -5,16 +5,21 @@ export default function Typo3Tailwind() {
     layouts: true
   }
 
+  this.options.typo3.components = true
+
   if (config.layouts) {
     this.addLayout(resolve(__dirname, "./layouts/default.vue"), "default");
   }
 
   this.addModule(["@nuxtjs/tailwindcss"]);
 
-  this.addPlugin({
-    src: resolve(__dirname, "plugin.js"),
-    fileName: "nuxt-typo3-theme-plugin.js",
-  });
+  this.nuxt.hook('components:dirs', dirs => {
+    dirs.push({
+      path: join(__dirname, 'components'),
+      extensions: ['vue'],
+      level: 100
+    })
+  })
 
   this.nuxt.hook("tailwindcss:config", function (tailwindConfig) {
     tailwindConfig.content.push(resolve(__dirname, "**/*.vue"));

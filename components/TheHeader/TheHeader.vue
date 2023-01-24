@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-600 body-font">
+  <header class="text-gray-600 body-font border-b border-gray-100 mb-8">
     <div
       class="
         container
@@ -11,7 +11,7 @@
         items-center
       "
     >
-      <a href="/"
+      <NuxtLink :to="getHomeUrl()"
         class="
           flex
           title-font
@@ -22,28 +22,14 @@
           md:mb-0
         "
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          class="w-10 h-10 text-white p-2 bg-primary rounded-full"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-          ></path>
-        </svg>
-        <span class="ml-3 text-xl">nuxt-typo3</span>
-      </a>
+        <Logo width="100"/>
+      </NuxtLink>
       <nav
         class="md:ml-auto flex flex-wrap items-center text-base justify-center"
       >
         <template v-if="navMain.children">
         <nuxt-link
-          class="mr-5 hover:text-gray-900"
+          class="mr-5"
           v-for="(item, key) in navMain.children"
           :key="key"
           :to="item.link"
@@ -51,13 +37,16 @@
           {{ item.title }}
         </nuxt-link>
       </template>
+      <T3LangSwitcher class="border-l border-gray-100 ml-4 pl-4"/>
       </nav>
     </div>
   </header>
 </template>
 <script>
 import { mapState } from 'vuex'
+import urlMixin from '~typo3/mixins/utils/urls'
 export default {
+  mixins: [urlMixin],
   computed: {
     ...mapState({
       navMain: state => state.typo3.initial.navigation[0] || [] // get first instance from root
@@ -65,4 +54,9 @@ export default {
   }
 }
 </script>
-
+<style lang="postcss">
+a:hover,
+.nuxt-link-exact-active {
+  @apply text-primary;
+}
+</style>
