@@ -16,7 +16,7 @@
         {{ header }}
       </template>
     </component>
-    <component :is="`h${headerLevel + 1}`" v-if="subheader">
+    <component :is="`h${headerLevel + 1}`" v-if="subheader" :class="headerPosition">
       {{ subheader }}
     </component>
   </div>

@@ -13,6 +13,8 @@ export default function Typo3Tailwind() {
 
   this.addModule(["@nuxtjs/tailwindcss"]);
 
+  this.options.css.push(resolve(__dirname, 'style.css'))
+
   this.nuxt.hook('components:dirs', dirs => {
     dirs.push({
       path: join(__dirname, 'components'),

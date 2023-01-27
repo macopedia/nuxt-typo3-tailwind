@@ -1,5 +1,5 @@
 <template>
-  <div :class="`t3-ce-table--${tableClass}`" class="t3-ce-table prose">
+  <div :class="`t3-ce-table--${tableClass}`" class="t3-ce-table">
     <t3-ce-header v-bind="$props" />
     <table>
       <caption v-if="tableCaption">

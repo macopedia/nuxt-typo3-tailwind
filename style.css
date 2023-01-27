@@ -1,0 +1,49 @@
+.t3-ce-frame {
+    &.space-before-small {
+        @apply mt-4;
+    }
+
+    &.space-after-small {
+        @apply mb-4;
+    }
+
+    &.space-before-default {
+        @apply mt-8;
+    }
+
+    &.space-after-default {
+        @apply mb-8;
+    }
+
+    &.space-before-large {
+        @apply mt-12;
+    }
+
+    &.space-after-large {
+        @apply mb-12
+    }
+
+    &.space-before-extra-large {
+        @apply mt-16;
+    }
+
+    &.space-after-extra-large {
+        @apply mb-16
+    }
+}
+
+.frame-default {
+    @apply container mx-auto;
+}
+
+.frame-indent {
+    @apply prose mx-auto;
+}
+
+.t3-ce-bullets {
+    @apply prose;
+}
+
+.center {
+    @apply text-center;
+}

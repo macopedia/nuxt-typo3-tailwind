@@ -1,6 +1,6 @@
 <template>
   <div class="t3-ce-menu px-5 py-24 mx-auto">
-    <t3-ce-header v-bind="$props" class="text-center mb-20 mx-auto prose" />
+    <t3-ce-header v-bind="$props" class="text-center mb-20 mx-auto" />
 
     <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" v-if="menu">
       <div

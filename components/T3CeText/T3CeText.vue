@@ -1,7 +1,9 @@
 <template>
-  <div class="t3-ce-text t3-ce-textpic mx-auto flex px-5  items-center justify-center flex-col  prose">
-    <t3-ce-header v-bind="$props" />
-    <t3-html-parser :content="bodytext" class="w-full mx-auto	"/>
+  <div class="t3-ce-text t3-ce-textpic mx-auto flex px-5  items-center justify-center flex-col">
+    <div class="prose">
+      <t3-ce-header v-bind="$props" />
+      <t3-html-parser :content="bodytext" class="w-full mx-auto	"/>
+    </div>
   </div>
 </template>
 <script>

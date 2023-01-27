@@ -3,7 +3,7 @@
 
   <div
     v-if="layout === 'hero'"
-    class="t3-ce-textpic  mx-auto flex px-5 py-24 items-center justify-center flex-col"
+    class="t3-ce-textpic mx-auto flex items-center justify-center flex-col"
   >
     <t3-media-gallery
       v-if="gallery"
@@ -21,7 +21,7 @@
   <!--  appearance default layout -->
   <div
     v-else-if="layout === 'default'"
-    class="t3-ce-textpic container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+    class="t3-ce-textpic mx-auto flex md:flex-row flex-col items-center"
   >
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <t3-media-gallery
@@ -41,7 +41,7 @@
   <!--  appearance layout-1 layout -->
   <div
     v-else-if="layout === 'layout-1'"
-    class="t3-ce-textpic container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+    class="t3-ce-textpic mx-auto flex md:flex-row flex-col items-center"
   >
     <div
       class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center prose"
