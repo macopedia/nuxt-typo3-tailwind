@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.1",
-    "@tailwindcss/typography": "^0.5.4",
-    "@nuxt/kit": "3.0.0-rc.13"
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@tailwindcss/typography": "^0.5.4"
   }
 }
