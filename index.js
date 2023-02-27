@@ -6,6 +6,7 @@ export default function Typo3Tailwind() {
   }
 
   this.options.typo3.components = true
+  this.options.build.transpile.push('vee-validate/dist/rules')
 
   if (config.layouts) {
     this.addLayout(resolve(__dirname, "./layouts/default.vue"), "default");
