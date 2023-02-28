@@ -25,7 +25,12 @@ export default function Typo3Tailwind() {
   })
 
   this.nuxt.hook("tailwindcss:config", function (tailwindConfig) {
-    tailwindConfig.content.push(resolve(__dirname, "**/*.vue"));
+    tailwindConfig.content = [
+      resolve(__dirname, "**/*.vue"),
+      'components/**/*.{vue,js,ts}',
+      'layouts/**/*.{vue,js,ts}',
+      'pages/**/*.{vue,js,ts}'
+    ]
     tailwindConfig.plugins.push(require('@tailwindcss/typography'));
     tailwindConfig.theme = {extend: {
       colors: {
