@@ -377,7 +377,7 @@
     unimport "^2.2.4"
     untyped "^1.2.2"
 
-"@nuxtjs/tailwindcss@^6.4.1":
+"@nuxtjs/tailwindcss@6.4.1":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.4.1.tgz#e4018312afd087b7f040b63174547918e81b1c42"
   integrity sha512-b8c6h+iiHJJ/rw/IirmYlF0RaIGVIVFmZXdHYPuDW/Mf6WAEz8IkAicyO5gRL3jYKp98kld067XPGsumDhaVVg==
